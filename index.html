@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css"
+      integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <nav class="navbar navbar-light bg-primary justify-content-center">
+    <span class="navbar-center mb-0 h1"></span>
+    <h1 class="display-1">Weather Dashboard</h1>
+  </nav>
+
+  <div class="row min-vh-100 no-gutters">
+    <header
+      class="col-12 col-lg-3 bg-light text-light sticky-top d-flex flex-column p-4 p-lg-3"
+    >
+      <h3 class="city">
+        <span class="oi oi-task d-inline d-lg-none"></span>Search for a City:
+      </h3>
+
+      <div class="row">
+        <div class="input-group col-sm-9">
+          <input
+            class="form-control py-2"
+            name="find-city"
+            placeholder="search"
+            id="search-input"
+          />
+
+          <button
+            class="col-sm-2 btn btn-outline-secondary btn-sm"
+            id="search-btn"
+            type="button"
+          >
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-5 row">
+        <div class="col-12">
+          <ul id="city-container" class="list-group list-group-flush"></ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="col-12 col-lg-9 d-flex flex-column">
+      <div class="page-content page-container" id="page-content">
+        <div class="row container mt-5 d-flex justify-content-center">
+          <div class="col-12 stretch-card">
+            <div class="card card-weather">
+              <div class="card-body">
+                <div class="weather-date-location">
+                  <h3 id="weather-date"></h3>
+                </div>
+                <div class="weather-data"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="five-day-header"></div>
+
+      <div class="mt-5 row">
+        <div class="card-deck"></div>
+      </div>
+    </main>
+  </div>
+
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
