@@ -141,7 +141,7 @@ var displayWeather = function(data, city, uvData) {
         var fiveDay = (data.list[i])
         var dayDate = moment.unix(fiveDay.dt).format("M/D/YYYY")
         var card = document.createElement("div")
-        card.classList = "card bg-primary"
+        card.classList = "card bg-warning"
         var cardBody = document.createElement("div")
         cardBody.classList = "card-body"
         var dateDisplay = "<p id=date>" + dayDate + "</p>"

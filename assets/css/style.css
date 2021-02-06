@@ -1,46 +1,67 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  /* root for color */
-  :root {
-    --primary-color: #fff;
-    --tertiary-color: #17a2b8;
-  }
-  
-  /* header */
-  header h1 {
-    font-size: 50px;
-  }
-  
-  #searchBar {
-    display: grid;
-    grid-template-columns: auto 44px;
-    gap: 5px;
-    margin-bottom: 20px;
-  }
-  
-  #searchText {
-    width: 100%;
-    grid-column: 1 / span 1;
-  }
-  
-  #currentDeg {
-    top: -47px;
-    right: -30px;
-    font-size: 60px;
-  }
-  
-  /* Footer */
-  
-  footer {
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
-    text-align: center;
-  }
-  
-  footer h2 a {
-    text-decoration: none;
-    color: var(--primary-color);
-  }
-  
+.head {
+    color: rgb(24, 206, 230);
+    font-size: 24px;
+}
+
+h1 {
+    color: white;
+    align-content: center;
+}
+
+.city {
+    color: black;
+}
+
+.btn {
+    background-color: rgb(31, 155, 231);
+}
+
+.list-group-item {
+    text-transform: capitalize;
+    color: black;
+    cursor: pointer;
+}
+
+#city {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.card-deck {
+    margin-left: 25px;
+}
+
+#five-day-header {
+    margin-left: 20px;
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p {
+    color: white;
+}
+
+#date {
+    font-weight: bold;
+}
+
+.bold-city {
+    font-weight: bold;
+}
+
+.danger {
+    background-color: red;
+}
+
+.moderate {
+    background-color: orange;
+}
+
+.favorable {
+    background-color: green;
+}
+
+.bold-city {
+    text-transform: capitalize;
+}
