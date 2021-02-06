@@ -25,7 +25,7 @@ Third-party APIs allow to access their data and functionality by making requests
 
 ## Demonstration
 
-    pending
+https://lucasmbarros.github.io/weather-dashboard/
 
 ## Credits
 
